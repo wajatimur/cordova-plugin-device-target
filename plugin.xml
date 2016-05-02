@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-device-target" version="1.0.0">
+	<name>Target Device</name>
+	<description>Corova Target Device</description>
+	<keywords>cordova,target,device</keywords>
+	<author>Azri Jamil</author>
+	<license>MIT</license>
+	<repo>https://github.com/meteor/cordova-plugin-meteor-webapp.git</repo>
+
+	<engines>
+		<engine name="cordova" version=">=5.4.1" />
+		<engine name="cordova-android" version=">=1.8.0" />
+	</engines>
+	
+	<config-file target="AndroidManifest.xml" parent="/*">
+		<supports-screens
+			android:xlargeScreens="true"
+			android:largeScreens="true"
+			android:smallScreens="false" />
+	</config-file>
+
+</plugin>
